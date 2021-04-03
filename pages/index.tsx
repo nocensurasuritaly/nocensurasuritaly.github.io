@@ -3,7 +3,7 @@ import React from 'react';
 const Index = () => (
   <div className="container">
     <div className="row mt-5">
-      <div className="col-8 offset-2">
+      <div className="col">
         <p className="text-right">
           <small>
             <a href="https://www.reddit.com/r/Italia/comments/mjasn1/sito_contro_la_censura_su_ritaly/" target="_blank" rel="noreferrer">
@@ -11,6 +11,11 @@ const Index = () => (
             </a>
           </small>
         </p>
+      </div>
+    </div>
+
+    <div className="row">
+      <div className="col-8 offset-2">
         <h1 className="display-1 text-center">
           No alla censura su r/italy
         </h1>
@@ -18,7 +23,7 @@ const Index = () => (
     </div>
 
     <div className="row mt-5">
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Questo gruppo di utenti Reddit vuole denunciare la censura dilagante su r/italy.
           Il nostro obbiettivo è quello di spingere i moderatori della community Italiana più
@@ -34,7 +39,7 @@ const Index = () => (
           .
         </p>
       </div>
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Invitiamo i moderatori di r/italy ad aprire una
           {' '}
@@ -70,7 +75,7 @@ const Index = () => (
     </div>
 
     <div className="row mt-5">
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Un moderatore è una persona che arbitra e presiede una discussione, al fine di
           agevolarla. Oggi su r/italy si verifica invece l&apos;opposto. Molti post vengono rimossi
@@ -81,7 +86,7 @@ const Index = () => (
           preferiscono eliminare completamente le discussioni controverse.
         </p>
       </div>
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Stiamo raccogliendo diverse segnalazioni di utenti che sono stati censurati e hanno
           provato a chiedere spiegazioni ai moderatori di r/italy. Molti utenti non hanno
@@ -101,13 +106,15 @@ const Index = () => (
           Vuoi parlare di censura? Vieni bannato
         </h2>
         <p>
-          <img className="img-fluid img-thumbnail" alt="La censura su r/italy" src="/images/censura_su_ritaly.png" />
+          <a href="/images/censura_su_ritaly.png" target="_blank" rel="noreferrer">
+            <img className="img-fluid img-thumbnail" alt="La censura su r/italy" src="/images/censura_su_ritaly.png" />
+          </a>
         </p>
       </div>
     </div>
 
     <div className="row mt-5 mb-5">
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Se anche tu ritieni che questo comportamento sia
           {' '}
@@ -118,7 +125,7 @@ const Index = () => (
           .
         </p>
       </div>
-      <div className="col">
+      <div className="col-md-6">
         <p>
           Se invece sei stato vittima di censura su r/italy o vuoi riportare un
           comportamento scorretto da parte dei moderatori,
