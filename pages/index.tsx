@@ -4,6 +4,13 @@ const Index = () => (
   <div className="container">
     <div className="row mt-5">
       <div className="col-8 offset-2">
+        <p className="text-right">
+          <small>
+            <a href="https://www.reddit.com/r/Italia/comments/mjasn1/sito_contro_la_censura_su_ritaly/" target="_blank" rel="noreferrer">
+              Stiamo discutendo qui
+            </a>
+          </small>
+        </p>
         <h1 className="display-1 text-center">
           No alla censura su r/italy
         </h1>
