@@ -1,8 +1,10 @@
 import React from 'react';
+import Head from 'next/head';
 import { AppProps } from 'next/app';
+import { Language } from '../types.d';
+import Translated from '../components/Translated';
 import 'bootswatch/dist/journal/bootstrap.css';
 import './style.css';
-import Head from 'next/head';
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>
@@ -26,8 +28,10 @@ const App = ({ Component, pageProps }: AppProps) => (
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-    <Component {...pageProps} />
+    <Translated language={Language.ITALIAN}>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <Component {...pageProps} />
+    </Translated>
   </>
 );
 

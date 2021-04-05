@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "extract-messages": "formatjs extract pages/**/*.tsx --out-file i18n/it.json --id-interpolation-pattern '[sha512:contenthash:base64:6]' --format simple",
     "lint": "eslint . --ext .ts,.tsx",
     "build": "next build && next export",
     "start": "next start"
@@ -12,15 +13,19 @@
     "bootswatch": "^4.6.0",
     "luxon": "^1.26.0",
     "next": "10.0.9",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "^17.0.1",
+    "react-dom": "17.0.1",
+    "react-intl": "^5.15.7"
   },
   "devDependencies": {
+    "@formatjs/cli": "^4.2.6",
+    "@formatjs/ts-transformer": "^3.3.6",
     "@types/luxon": "^1.26.2",
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
+    "babel-plugin-formatjs": "^10.2.6",
     "eslint": "^7.22.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.1",
